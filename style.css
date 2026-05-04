@@ -8,6 +8,13 @@ mise en place de la variable :root
     --font-nav: 'Montserrat', sans-serif;
     --color-font-section1: white;
     --font-section1: 'Montserrat', sans-serif;
+    --font-section2-titre: 'caveat', sans-serif;
+    --color-section2-titre: #916fae;
+    --font-section2-p: 'Montserrat', sans-serif;
+    --color-section2-p: #383838;
+    --font-section2-btn: 'Montserrat', sans-serif;
+    --color-section2-btn: white;
+    --color-bg-section2-btn: #b17f4a;
 }
 
 /* ===========================================
@@ -61,12 +68,89 @@ SECTION 1
 
 .section1__bienvenue {
     position: absolute;
-    border: yellow 2px solid;
+    /* border: yellow 2px solid; */
     color: var(--color-font-section1);
     font-family: var(--font-section1);
-    font-size: 3em;
+    font-size: 4.1em;
     font-weight: 500;
     margin: 130px 0 0 400px;
-    width: 350px;
-    height: 300px;
+    width: 500px;
+    height: 350px;
+}
+
+/* ========================================
+SECTION 2
+=========================================== */
+.section2 {
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 10px 0 0px 0;
+    height: 770px;
+}
+
+.section2__div1 {
+    margin-top: 15px;
+    height: 220px;
+    width: 34vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section2__div1__titre,
+.section2__div3__titre {
+    color: var(--color-section2-titre);
+    font-family: var(--font-section2-titre);
+    font-weight: bold;
+    font-size: 2.9em;
+}
+
+.section2__div1__p {
+    font-family: var(--font-section2-p);
+    color: var(--color-section2-p);
+    text-align: center;
+}
+
+.section2__div2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+
+}
+
+.section2__div2 img {
+    width: 40vw;
+    height: 40vh;
+    padding: 10px;
+}
+
+.section2__div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: start;
+    gap: 15px;
+    height: 400px;
+    padding: 0 22px 0 22px;
+}
+
+.section2__div3__p {
+    font-family: var(--font-section2-p);
+    color: var(--color-section2-p);
+}
+
+.section2__div2__btn {
+    border: none;
+    background-color: var(--color-bg-section2-btn);
+    color: var(--color-section2-btn);
+    font-family: var(--font-section2-btn);
+    width: 140px;
+    height: 36px;
+    border-radius: 40px;
 }
