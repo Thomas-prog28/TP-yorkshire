@@ -15,6 +15,9 @@ mise en place de la variable :root
     --font-section2-btn: 'Montserrat', sans-serif;
     --color-section2-btn: white;
     --color-bg-section2-btn: #b17f4a;
+    --font-section3-titre: 'caveat', sans-serif;
+    --color-bg-section3: #b17f4a;
+    --color-font-section3: #ece7f1;
 }
 
 /* ===========================================
@@ -153,4 +156,37 @@ SECTION 2
     width: 140px;
     height: 36px;
     border-radius: 40px;
+}
+
+/* ========================================
+SECTION 3
+=========================================== */
+.section3 {
+    height: 400px;
+    margin: 0 5px;
+}
+
+.section3__div1 {
+    background-image: url('medias_site/chien-yorkshire-herbe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+.section3__div2 {
+    text-align: center;
+    height: 200px;
+    background-color: var(--color-bg-section3);
+}
+
+.section3__div2 p {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 780px;
+    font-weight: bold;
+    font-family: var(--font-section3-titre);
+    color: var(--color-font-section3);
+    font-size: xx-large;
 }
